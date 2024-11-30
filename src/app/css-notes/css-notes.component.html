@@ -1,0 +1,401 @@
+<div class="container-fluid" style="padding-top: 100px;">
+  <div class="row mx-auto">
+    <div class="col">
+      <h1 class="text-center font">CSS</h1><br>
+      <br>
+      <h4>What is CSS?</h4>
+      <ul>
+        <li>CSS stands for Cascading Style Sheets.</li>
+        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+        <li>External stylesheets are stored in CSS files</li>
+      </ul>
+      <h4>CSS Syntax</h4>
+      <p>A CSS rule consists of a selector and a declaration block.</p>
+      <pre>
+<span style="color: rgb(226, 0, 0)"> p </span> &#123;
+<span>color</span><span class="text-primary">: red;</span>
+<span>text-align</span><span class="text-primary">: center;</span>
+&#125;</pre>
+      <p><i>Example Explained</i></p>
+      <ul>
+        <li><span class="text-danger">p</span> is a selector in CSS (it points to the HTML element you want to
+          style: &lt;p&gt;).</li>
+        <li><span class="text-danger">color</span> is a property, and <span class="text-danger">red</span> is
+          the property value</li>
+        <li><span class="text-danger">text-align</span> is a property, and <span class="text-danger">center</span> is
+          the property value</li>
+      </ul>
+      <h4>Using CSS</h4>
+      <p>CSS can be added to HTML documents in 3 ways:</p>
+      <ul>
+        <li><strong>Inline - </strong> by using the <span class="text-danger">style</span> attribute inside HTML
+          elements.</li>
+        <li><strong>Internal - </strong> by using a <span class="text-danger">&lt;style&gt;</span> element in
+          the <span class="text-danger">&lt;head&gt;</span> section</li>
+        <li><strong>External - </strong>by using a <span class="text-danger">&lt;link&gt;</span> element to link
+          to an external CSS file</li>
+      </ul>
+      <h6>Inline CSS</h6>
+      <p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+      <p>An inline CSS uses the <span class="text-danger">style</span> attribute of an HTML element.</p>
+      <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1 style="color:blue;"&gt;A Blue Heading&lt;/h1&gt;
+
+&lt;p style="color:red;"&gt;A red paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <h6>Internal CSS</h6>
+      <p>An internal CSS is defined in the <span class="text-danger">&lt;head&gt;</span> section of an HTML page,
+        within a <span class="text-danger">&lt;style&gt;</span> element.</p>
+      <pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body &#123;background-color: powderblue;&#125;
+h1   &#123;color: blue;&#125;
+p    &#123;color: red;&#125;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p>To use an external style sheet, add a link to it in the <span class="text-danger">&lt;head&gt;</span>
+        section of each HTML page:</p>
+      <pre>
+&lt;html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p>The external style sheet can be written in any text editor. The file must not contain any HTML code, and
+        must be saved with a .css extension.</p>
+      <p>Here is what the "styles.css" file looks like:</p>
+      <h6>"styles.css":</h6>
+      <pre>
+body &#123;
+  background-color: powderblue;
+&#125;
+
+h1 &#123;
+  color: blue;
+&#125;
+
+p &#123;
+  color: red;
+&#125;</pre>
+      <p><mark> <strong>Tip:</strong> With an external style sheet, you can change the look of an entire web site,
+          by changing one file! </mark></p>
+      <br>
+      <h4>CSS Colors, Fonts and Sizes</h4>
+      <p>The CSS <span class="text-danger">color</span>property defines the text color to be used.</p>
+      <p>The CSS <span class="text-danger">font-family </span>property defines the font to be used.</p>
+      <p>The CSS <span class="text-danger">font-size </span>property defines the text size to be used.</p>
+      <pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1 &#123;
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+&#125;
+
+p &#123;
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+&#125;
+
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <h4>CSS Border</h4>
+      <p>The CSS <span class="text-danger">border</span> property defines a border around an HTML element.</p>
+      <p><mark><strong>Tip:</strong> You can define a border for nearly all HTML elements.</mark></p>
+      <p><strong>Ex :-</strong> &lt;p style="border: 2px solid powderblue;"&gt;This is a paragraph.&lt;/p&gt;
+      </p>
+      <h4>CSS Padding</h4>
+      <p>The CSS <span class="text-danger">padding</span> property defines a padding (space) between the text and
+        the border.</p>
+      <p><strong>Ex :-</strong> &lt;p style="border: 2px solid powderblue; padding: 30px;"&gt;This is a
+        paragraph.&lt;/p&gt;</p>
+      <h4>CSS Margin</h4>
+      <p>The CSS <span class="text-danger">margin</span> property defines a margin (space) outside the border.</p>
+      <p><strong>Ex :-</strong> &lt;p style="border: 2px solid powderblue; margin: 50px;"&gt;This is a
+        paragraph.&lt;/p&gt;</p>
+      <h4>CSS Selectors</h4>
+      <p>A CSS selector selects the HTML element(s) you want to style.</p>
+      <h5>The CSS element Selector</h5>
+      <p>The element selector selects HTML elements based on the element name.</p>
+      <p><strong>Ex :-</strong> &lt;p style="text-align: center; color: red;"&gt;Every paragraph will be affected
+        by the style.&lt;/p&gt;</p>
+      <h5>The CSS id Selector</h5>
+      <p>The id of an element is unique within a page, so the id selector is used to select one unique element!
+      </p>
+      <p>To select an element with a specific id, write a hash <strong>(#)</strong> character, followed by the id
+        of the element.</p>
+      <p><strong>Ex :-</strong></p>
+      <pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+#para1 &#123;
+  text-align: center;
+  color: red;
+&#125;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;p id="para1"&gt;Hello World!&lt;/p&gt;
+&lt;p&gt;This paragraph is not affected by the style.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <h5>The CSS class Selector</h5>
+      <p>Selects elements with a specific class ,Selects elements with a specific class attribute.</p>
+      <p><strong>Ex :-</strong></p>
+      <pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+.center &#123;
+  text-align: center;
+  color: red;
+&#125;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1 class="center"&gt;Red and center-aligned heading&lt;/h1&gt;
+&lt;p class="center"&gt;Red and center-aligned paragraph.&lt;/p&gt; 
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+            </pre>
+      <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+      <h5>The CSS Universal Selector</h5>
+      <p>The universal selector (*) selects all HTML elements on the page.</p>
+      <h5>The CSS Grouping Selector</h5>
+      <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
+      <p>To group selectors, separate each selector with a comma.</p>
+      <p><strong>Ex :-</strong></p>
+      <pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+h1, h2, p &#123;
+  text-align: center;
+  color: red;
+&#125;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;h2&gt;Smaller heading!&lt;/h2&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <h4>CSS Comments</h4>
+      <p>CSS comments are not displayed in the browser, but they can help document your source code.</p>
+      <p>A CSS comment is placed inside the <span class="text-danger">&lt;style&gt;</span> element, and starts
+        with <span class="text-danger">/*</span> and ends with <span class="text-danger">*/</span>:</p>
+      <p><strong>Comments can also span multiple lines: </strong></p>
+      <pre>
+/* This is
+a multi-line
+comment */</pre>
+      <br>
+      <h2>CSS Colors</h2>
+      <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+      <h4>CSS Background Color</h4>
+      <p>You can set the background color for HTML elements:</p>
+      <p><strong>Ex :- </strong>&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+      </p>
+      <h4>CSS Text Color</h4>
+      <p><strong>Ex :- </strong>&lt;h3 style="color:Tomato;"&gt;Hello World&lt;/h3&gt;
+      </p>
+      <h4>CSS Border Color</h4>
+      <p><strong>Ex :- </strong>&lt;h1 style="border: 2px solid Tomato;"&gt;Hello World&lt;/h1&gt;
+      </p>
+      <h4>CSS Color Values</h4>
+      <p>In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:
+      </p>
+      <p>rgb(255, 99, 71)</p>
+      <p>#ff6347</p>
+      <p>hsl(9, 100%, 64%)</p>
+      <br>
+      <h2>CSS Backgrounds</h2>
+      <p>The CSS background properties are used to add background effects for elements.</p>
+      <h4>CSS background-color</h4>
+      <p>The <span class="text-danger">background-color</span> property specifies the background color of an element.
+      </p>
+      <p><strong>Ex :- </strong>&lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+      </p>
+      <p>With CSS, a color is most often specified by:</p>
+      <ul>
+        <li>a valid color name - like "red"</li>
+        <li>a HEX value - like "#ff0000"</li>
+        <li>an RGB value - like "rgb(255,0,0)"</li>
+      </ul>
+      <h4>Opacity / Transparency</h4>
+      <p>The opacity <span class="text-danger">property</span> specifies the opacity/transparency of an element. It can
+        take a value from 0.0 - 1.0. The lower value, the more transparent:</p>
+      <p><strong>Ex :- </strong>&lt;h1 style="background-color:DodgerBlue; opacity: 0.1;"&gt;Hello World&lt;/h1&gt;</p>
+      <h4>Transparency using RGBA</h4>
+      <p>If you do not want to apply opacity to child elements, use RGBA color values. </p>
+      <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between
+        0.0 (fully transparent) and 1.0 (fully opaque).</p>
+      <p><strong>Ex :- </strong>&lt;h1 style="background-color:rgba(0, 128, 0, 0.1);"&gt;Hello World&lt;/h1&gt;</p>
+      <br>
+      <h2>CSS Background Image</h2>
+      <h4>CSS background-image</h4>
+      <p>The <span class="text-danger">background-image</span> property specifies an image to use as the background of
+        an element.</p>
+      <p>By default, the image is repeated so it covers the entire element.</p>
+      <p><strong>Ex :- </strong>&lt;h1 style="background-image: url("paper.gif");"&gt;Hello World&lt;/h1&gt;</p>
+      <br>
+      <h2>CSS Background Image Repeat</h2>
+      <h4>CSS background-repeat</h4>
+      <p>By default, the <span class="text-danger">background-image</span> property repeats an image both horizontally
+        and vertically</p>
+      <p><mark>Tip: To repeat an image horizontally, set <span class="text-danger">background-repeat:
+            repeat-x;</span></mark></p>
+      <p><mark>Tip: To repeat an image vertically, set <span class="text-danger">background-repeat:
+            repeat-y;</span></mark></p>
+      <h4>CSS background-repeat: no-repeat</h4>
+      <p>Showing the background image only once is also specified by the <span
+          class="text-danger">background-repeat</span> property:</p>
+      <p><strong>Ex :- </strong></p>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body style="background-image: url('img_tree.png'); background-repeat: no-repeat;"&gt;
+
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;p&gt;Inline background image example.&lt;/p&gt;
+&lt;p&gt;The background image only shows once, but it is disturbing the reader!&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <h4>CSS background-position</h4>
+      <p>The background-position property is used to specify the position of the background image.</p>
+      <p><strong>Ex :- </strong></p>
+      <pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body &#123;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px; 
+&#125;
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <br>
+      <h4>CSS Background Shorthand</h4>
+      <p>To shorten the code, it is also possible to specify all the background properties in one single property. This
+        is called a shorthand property.</p>
+      <p><strong>Ex :- </strong> body &#123;
+        background: #ffffff url("img_tree.png") no-repeat right top;
+        &#125;
+      </p>
+      <br>
+      <h2>CSS Borders</h2>
+      <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+      <h4>CSS Border Style</h4>
+      <p>The <span class="text-danger">border-style</span> property specifies what kind of border to display.</p>
+      <p>The following values are allowed:</p>
+      <ul>
+        <li><span class="text-danger">dotted </span>- Defines a dotted border</li>
+        <li><span class="text-danger">dashed </span>- Defines a dashed border</li>
+        <li><span class="text-danger">solid</span>- Defines a solid border</li>
+        <li><span class="text-danger">double</span>- Defines a double border</li>
+        <li><span class="text-danger">groove</span>- Defines a 3D grooved border. The effect depends on the border-color
+          value</li>
+        <li><span class="text-danger">ridge</span>- Defines a 3D ridged border. The effect depends on the border-color
+          value</li>
+        <li><span class="text-danger">inset</span>- Defines a 3D inset border. The effect depends on the border-color
+          value</li>
+        <li>outset<span class="text-danger">- Defines a 3D outset border. The effect depends on the border-color
+            value</span></li>
+        <li><span class="text-danger">none</span>- Defines no border</li>
+        <li><span class="text-danger">hidden</span>- Defines a hidden border</li>
+      </ul>
+      <p>The <span class="text-danger">border-style</span> property can have from one to four values (for the top
+        border, right border, bottom border, and the left border).</p>
+      <br>
+      <h2>CSS Border Width</h2>
+      <p>The <span class="text-danger">border-width</span> property specifies the width of the four borders.</p>
+      <p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined
+        values: thin, medium, or thick:</p>
+      <p><strong>Eg :- </strong>&lt;p style="border-style: solid; border-width: 5px;"&gt;Some text.&lt;/p&gt;
+      </p>
+      <h4>Specific Side Widths</h4>
+      <p>The <span class="text-danger">border-width</span> property can have from one to four values (for the top
+        border, right border, bottom border, and the left border):</p>
+      <p><strong>Eg :- </strong>&lt;p style="border-style: solid; border-width: 25px 10px 4px 35px;"&gt;Some
+        text.&lt;/p&gt;</p>
+      <br>
+      <h2>CSS Border Color</h2>
+      <p>The <span class="text-danger">border-color</span> property is used to set the color of the four borders.</p>
+      <p>The color can be set by:</p>
+      <ul>
+        <li>name- specify a color name, like "red"</li>
+        <li>HEX- specify a HEX value, like "#ff0000"</li>
+        <li>RGB- specify a RGB value, like "rgb(255,0,0)"</li>
+        <li>HSL- specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+        <li>transparent</li>
+      </ul>
+      <p><strong>Eg :- </strong>&lt;p style="border: solid red;"&gt;A solid red border&lt;/p&gt;</p>
+      <h4>Specific Side Colors</h4>
+      <p>The <span class="text-danger">border-color</span> property can have from one to four values (for the top
+        border, right border, bottom border, and the left border). </p>
+      <p><strong>Eg :- </strong>&lt;p style="border-style: solid; border-color: red green blue yellow;"&gt;The
+        border-color property can have from one to four values (for the top border, right border, bottom border, and the
+        left border):&lt;/p&gt;</p>
+      <h2>CSS Rounded Borders</h2>
+      <p>The <span class="text-danger">border-radius</span> property is used to add rounded borders to an element:</p>
+      <p><strong>Eg :- </strong>&lt;p style="border-radius: 12px;"&gt;Roundest border&lt;/p&gt;</p>
+
+      <div class="d-flex justify-content-center mt-3">
+        <a routerLink="/quiz-instructions" class="btn btn-lg btn-orange" type="button">Start Quiz</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>

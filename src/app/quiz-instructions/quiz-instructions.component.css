@@ -1,0 +1,56 @@
+.box-model{
+    background: #fff;
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-top: 4px solid #ff9800;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.inst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff9800;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+.box-model h2{
+    padding: 15px 0px;
+}
+.box-model ul{
+    margin-top: 20px;
+}
+li{
+    list-style: square; 
+    font-size: 18px; 
+    line-height: 30px;
+}
+
+.NewButton {
+    display: block; 
+    margin: 20px auto; 
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+
+@media screen and (max-width: 576px) {
+    .box-model {
+        width: 80%; 
+    }
+
+    .inst {
+        font-size: 20px; 
+        width: 50px; 
+        height: 50px; 
+    }
+}

@@ -1,0 +1,54 @@
+<!-- Main content of the webpage -->
+<div class=" container question-container mt-5" style="padding-top: 100px;">
+    <div class="box-container">
+    <!-- Heading for the quiz website -->
+<h1 class="text-center"> <i>BYTEBATTLE </i> HTML </h1>
+
+<!-- Instruction for the user to input the number of questions -->
+<p id="questionInput" class="text-center">How many questions do you want to solve?</p>
+
+<!-- Input field for the user to enter the number of questions -->
+<input type="number" id="questionCount" min="1" max="20" step="1" class="form-control mb-2  mx-auto ">
+
+<!-- Button to start the quiz -->
+<button id="startButton" (click)="startQuiz()" class="btn  custom-button d-block mx-auto mt-3">Start Quiz</button>
+
+
+</div>
+
+<div id="quiz" style="display: none;">
+    <!-- Display current question -->
+    <div id="question" class="mb-3"></div>
+    
+    <!-- List to display options for the current question -->
+    <ul class="piyush" id="options"></ul>
+
+    <!-- Button group for small screens -->
+    <div class="d-flex flex-column flex-sm-row">
+        <!-- Button to move to the previous question -->
+        <button (click)="previousQuestion()" class="btn btn-secondary mb-2 mb-sm-0">Previous</button>
+
+        <!-- Button to move to the next question -->
+        <button (click)="nextQuestion()" class="btn btn-primary ms-sm-2 mb-2 mb-sm-0">Next</button>
+
+        <!-- Submit button to view the final score -->
+        <button (click)="showScore()" class="btn btn-success ms-sm-2">Submit</button>
+    </div>
+    
+    <!-- Display result for the current question -->
+    <div id="result" class="mt-3"></div>  
+</div>
+
+
+    <!-- Score card section, initially hidden -->
+    <div class="score-card box-container" id="scoreCard">
+        <!-- Display user's score -->
+        <p style="font-size: 30px;">Your Score: <span id="score"></span></p>
+        
+        <!-- Circular progress bar for the score -->
+        <div id="scorePercentage"></div>
+
+        <!-- Button to restart the quiz -->
+    <button (click)="restartQuiz()" class="btn custom-button mt-5">Start Quiz Again</button>
+    </div>
+</div>

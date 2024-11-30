@@ -1,0 +1,111 @@
+.box-model {
+    background-color: #f8f9fa;
+    border: 2px ;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.links-media {
+    background: #f16823;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 36px;
+    color: white;
+}
+
+.links-media2 {
+    background: #f16823;
+    padding: 10px;
+    font-size: 26px;
+    border-radius: 15px;
+}
+
+.secondbox {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px ;
+}
+
+.form-title {
+    color: #f16823;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form-fields {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    padding-left: 25px;
+    border: 1px solid #0d0d0d;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+.submit-button {
+    background-color: #f16823;
+    color: #fff;
+    padding: 10px ;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 110px;
+    width: 100%;
+
+}
+
+.submit-button:hover {
+    background-color: #8d3804;
+}
+
+@media(max-width:768px) {
+    .links-media {
+        background: #f16823;
+        border-radius: 50%;
+        padding: 10px;
+        font-size: 26px;
+        color: white;
+    }
+
+    .box-model {
+        border: 2px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .secondbox {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        border: 2px;
+    }
+
+    .links-media2 {
+        background: #f16823;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+}

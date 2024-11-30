@@ -1,0 +1,11 @@
+.quiz-box{
+    box-shadow: 0 2px 6px rgb(211 211 211);
+    background: #fff !important;
+    padding-top: 50px;
+    height: 200px;  
+  }
+  .quiz-box i{
+    font-size: 45px;
+    text-align: center;
+    color: #ff9800;
+  }

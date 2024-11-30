@@ -1,0 +1,305 @@
+<div class="container-fluid" style="padding-top: 100px;">
+    <div class="row mx-auto">
+        <div class="col">
+            <h1 class="text-center font">HTML</h1><br>
+            <p><strong>Definition:</strong> HTML stands for Hyper Text Markup Language.</p>
+            <p><strong>Purpose:</strong> Widely used for developing web pages.</p>
+            <p><strong>Key Advantages:</strong></p>
+            <ul>
+                <li>Create a website or customize templates.</li>
+                <li>Essential for a career in web design (HTML and CSS).</li>
+                <li>Optimize websites for speed and performance.</li>
+                <li>Gateway to learning related technologies like JavaScript, PHP, or Angular.</li>
+            </ul>
+            <p><strong>HTML Structure</strong></p>
+            <p><strong>Definition:</strong> HTML is a Markup Language for structuring text documents with tags.</p>
+            <p><strong>Hypertext:</strong> Links web pages together.</p>
+            <p><strong>Example:</strong></p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Heading Example&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;!-- Heading Tags --&gt;
+        &lt;h1&gt;This is heading 1&lt;/h1&gt;
+        &lt;h2&gt;This is heading 2&lt;/h2&gt;
+        &lt;!-- ... (up to h6) --&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre><br>
+            <h2>HTML - Basic Tags</h2>
+            <h4>Heading Tags</h4>
+            <p>Any document starts with a heading. You can use different sizes for your headings. HTML also has six
+                levels of headings, which use the elements<strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;,
+                    &lt;h5&gt;</strong>, and <strong>&lt;h6&gt;</strong>. While displaying any heading, browser adds one
+                line before and one line after that heading.</p>
+            <p><strong>Example:</strong></p>
+            <pre>
+&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;h3&gt;This is heading 3&lt;/h3&gt;
+&lt;h4&gt;This is heading 4&lt;/h4&gt;
+&lt;h5&gt;This is heading 5&lt;/h5&gt;
+&lt;h6&gt;This is heading 6&lt;/h6&gt;</pre>
+            <h4>Paragraph Tag</h4>
+            <p>The &lt;p&gt; tag offers a way to structure your text into different paragraphs. </p>
+            <p><strong>Example:</strong></p>
+            <p>&lt;p&gt;Here is a paragraph of text.&lt;/p&gt;</p>
+            <p><strong>Line Break Tag:</strong></p>
+            <p><strong>Example:</strong></p>
+            <pre>
+&lt;p&gt;Hello&lt;br/&gt;
+You delivered your assignment on time.&lt;br/&gt;
+Thanks&lt;br/&gt;
+Mohan&lt;/p&gt;</pre>
+            <h4>Centering Content</h4>
+            <p>You can use <strong>&lt;center&gt;</strong> tag to put any content in the center of the page or any table
+                cell.</p>
+            <p><strong>Example:</strong></p>
+            <pre>
+&lt;p&gt;This text is not in the center.&lt;/p&gt;
+&lt;center&gt;
+    &lt;p&gt;This text is in the center.&lt;/p&gt;
+&lt;/center&gt;</pre>
+            <h4>Horizontal Lines</h4>
+            <p>Horizontal lines are used to visually break-up sections of a document. </p>
+            <p><strong>Example:</strong></p>
+            <pre>
+&lt;p&gt;This is paragraph one and should be on top&lt;/p&gt;
+&lt;hr/&gt;
+&lt;p&gt;This is paragraph two and should be at the bottom&lt;/p&gt;</pre>
+            <h4>Preserve Formatting</h4>
+            <p>Sometimes, you want your text to follow the exact format of how it is written in the HTML document. In
+                these cases, you can use the preformatted tag <strong>&lt;pre&gt;</strong>.</p>
+            <p><strong>Example:</strong></p>
+            <pre>
+&lt;pre&gt;
+function testFunction( strText ) &#123;
+    alert (strText)
+&#125;
+&lt;/pre&gt;</pre><br>
+            <h2 class="text-center ">HTML - Formatting</h2>
+            <h4>Bold Text</h4>
+            <p>Anything that appears within <strong>&lt;b&gt;...&lt;/b&gt;</strong> element, is displayed in bold. </p>
+            <p><strong>Example:</strong> &lt;p&gt;The following word uses a &lt;b&gt;bold&lt;/b&gt; typeface.&lt;/p&gt;
+            </p>
+            <h4>Italic Text</h4>
+            <p>Anything that appears within <strong>&lt;i&gt;...&lt;/i&gt;</strong> element is displayed in italicized.
+            </p>
+            <p><strong>Example:</strong> &lt;p&gt;The following word uses an &lt;i&gt;italicized&lt;/i&gt;
+                typeface.&lt;/p&gt;</p>
+            <h4>Underlined Text</h4>
+            <p> Anything that appears within <strong>&lt;u&gt;...&lt;/u&gt;</strong> element, is displayed with
+                underline. </p>
+            <p><strong>Example:</strong> &lt;p&gt;The following word uses an &lt;u&gt;underlined&lt;/u&gt;
+                typeface.&lt;/p&gt;</p>
+            <h4>Strike Text</h4>
+            <p>Anything that appears within <strong>&lt;strike&gt;...&lt;/strike&gt;</strong> element is displayed with
+                strikethrough, which is a thin line through the text. </p>
+            <p><strong>Example:</strong> &lt;p&gt;The following word uses a &lt;strike&gt;strikethrough&lt;/strike&gt;
+                typeface.&lt;/p&gt;</p>
+            <h4>Superscript Text</h4>
+            <p>The content of a <strong>&lt;sup&gt;...&lt;/sup&gt;</strong> element is written in superscript; the font
+                size used is the
+                same size as the characters surrounding it but is displayed half a character's height above the other
+                characters.</p>
+            <p><strong>Example:</strong> &lt;p&gt;The following word uses a &lt;sup&gt;superscript&lt;/sup&gt;
+                typeface.&lt;/p&gt;</p>
+            <h4>Subscript Text</h4>
+            <p>The content of a <strong>&lt;sub&gt;...&lt;/sub&gt;</strong> element is written in subscript; the font
+                size used is the
+                same as the characters surrounding it, but is displayed half a character's height beneath the other
+                characters.</p>
+            <p><strong>Example:</strong> &lt;p&gt;The following word uses a &lt;sub&gt;subscript&lt;/sub&gt;
+                typeface.&lt;/p&gt;</p>
+            <h4>Inserted Text</h4>
+            <p>Anything that appears within <strong>&lt;ins&gt;...&lt;/ins&gt;</strong> element is displayed as inserted
+                text.</p>
+            <p><strong>Example:</strong> &lt;p&gt;I want to drink &lt;del&gt;cola&lt;/del&gt;
+                &lt;ins&gt;wine&lt;/ins&gt;&lt;/p&gt;</p>
+            <h4>Deleted Text</h4>
+            <p>Anything that appears within <strong>&lt;del&gt;...&lt;/del&gt;</strong> element, is displayed as deleted
+                text</p>
+            <p><strong>Example:</strong>&lt;p&gt;I want to drink &lt;del&gt;cola&lt;/del&gt;
+                &lt;ins&gt;wine&lt;/ins&gt;&lt;/p&gt;</p>
+            <h4>Larger Text</h4>
+            <p>The content of the <strong>&lt;big&gt;...&lt;/big&gt;</strong> element is displayed one font size larger
+                than the rest of the text surrounding it </p>
+            <p><strong>Example:</strong>&lt;p&gt;The following word uses a &lt;big&gt;big&lt;/big&gt;
+                typeface.&lt;/p&gt;</p>
+            <h4>Smaller Text</h4>
+            <p>The content of the <strong>&lt;small&gt;...&lt;/small&gt;</strong> element is displayed one font size
+                smaller than the rest of the text surrounding it </p>
+            <p><strong>Example:</strong>&lt;p&gt;The following word uses a &lt;small&gt;small&lt;/small&gt;
+                typeface.&lt;/p&gt;</p>
+            <h4>Marked Text</h4>
+            <p>Anything that appears with-in &lt;mark&gt;...&lt;/mark&gt; element, is displayed as marked with yellow
+                ink.</p>
+            <p><strong>Example:</strong>&lt;p&gt;The following word has been &lt;mark&gt;marked&lt;/mark&gt; with
+                yellow&lt;/p&gt;</p>
+            <h4>Grouping Content</h4>
+            <p><strong>Div Tag:</strong></p>
+            <p><strong>Example:</strong></p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Div Tag Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;div id="menu" align="middle"&gt;
+         &lt;a href="/index.htm"&gt;HOME&lt;/a&gt; | 
+         &lt;a href="/about/contact_us.htm"&gt;CONTACT&lt;/a&gt; | 
+         &lt;a href="/about/index.htm"&gt;ABOUT&lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;div id="content" align="left"&gt;
+         &lt;h5&gt;Content Articles&lt;/h5&gt;
+         &lt;p&gt;Actual content goes here.....&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;</pre>
+            <p><strong>Span Tag:</strong></p>
+            <p><strong>Example:</strong></p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Span Tag Example&lt;/title&gt;
+   &lt;/head&gt;
+	
+   &lt;body&gt;
+      &lt;p&gt;This is the example of &lt;span style = "color:green"&gt;span tag&lt;/span&gt;
+         and the &lt;span style = "color:red"&gt;div tag&lt;/span&gt; along with CSS&lt;/p&gt;
+   &lt;/body&gt;
+	
+&lt;/html&gt;</pre><br>
+            <h2 class="text-center">HTML - Phrase Tags</h2>
+            <h4>Emphasized Text</h4>
+            <p>Anything that appears within <strong>&lt;em&gt;...&lt;/em&gt;</strong> element is displayed as emphasized
+                text.</p>
+            <p><strong>Example:</strong> &lt;p&gt;The following word uses an &lt;em&gt;emphasized&lt;/em&gt;
+                typeface.&lt;/p&gt;</p>
+            <h4>Strong Text</h4>
+            <p>Anything that appears within &lt;strong&gt;...&lt;/strong&gt; element is displayed as important text.</p>
+            <p><strong>Example:</strong> &lt;p&gt;The following word uses an &lt;strong&gt;strong&lt;/strong&gt;
+                typeface.&lt;/p&gt;</p>
+            <h4>Text Abbreviation</h4>
+            <p>The abbr tag defines an abbreviation or acronym, and the full description can be provided in the title
+                attribute for additional information.</p>
+            <p><strong>Example:</strong> &lt;p&gt;My best friend's name is &lt;abbr
+                title="Abhishek"&gt;Abhy&lt;/abbr&gt;.&lt;/p&gt;</p>
+            <h4>Text Direction</h4>
+            <p>The bdo tag is used to override the text direction, allowing text to be displayed from right to left
+                using the dir attribute.</p>
+            <p><strong>Example:</strong> &lt;p&gt;&lt;bdo dir="rtl"&gt;This text will go right to
+                left.&lt;/bdo&gt;&lt;/p&gt;</p>
+            <h4>Address Text</h4>
+            <p>The address tag is used to enclose any address information.</p>
+            <p><strong>Example:</strong> &lt;address&gt;388A, Road No 22, Jubilee Hills - Hyderabad&lt;/address&gt;</p>
+            <h2 class="text-center">HTML - Comments</h2>
+            <h4>Single Line Comment:</h4>
+            <p>HTML comments are written within &lt;!-- and --&gt; tags. They are not rendered by browsers and are
+                useful for adding notes or explanations within the code.</p>
+            <h4>Multiline Comment:</h4>
+            <p>Multiline comments in HTML extend across multiple lines within &lt;!-- and --&gt; tags, allowing for more
+                extensive commentary or annotations.</p>
+            <h2 class="text-center">HTML - Images</h2>
+            <h4>Insert Image</h4>
+            <p>The img tag is used to embed images in HTML. It includes attributes like src for the image source and alt
+                for alternative text.</p>
+            <p> <strong>syntax : &lt;img src="Image URL" ... attributes-list/&gt;</strong></p>
+            <p><strong>Example:</strong> &lt;img src="/html/images/test.png" alt="Test Image" /&gt;</p>
+            <p>The alt attribute is a mandatory attribute which specifies an alternate text for an image, if the image
+                cannot be displayed.</p>
+            <h4>Set Image Width/Height</h4>
+            <p>You can set image <strong>width</strong> and <strong>height</strong> based on your requirement using
+                width and height attributes. You can specify width and height of the image in terms of either pixels or
+                percentage of its actual size.</p>
+            <p><strong>Example:</strong> &lt;img src="/html/images/test.png" alt="Test Image" width = "150" height =
+                "100" /&gt;</p>
+            <h4>Set Image Border</h4>
+            <p>By default, image will have a border around it, you can specify border thickness in terms of pixels using
+                border attribute. A thickness of 0 means, no border around the picture.</p>
+            <p><strong>Example:</strong> &lt;img src="/html/images/test.png" alt="Test Image" border = "3"/&gt;</p>
+            <h4>Set Image Alignment</h4>
+            <p>By default, image will align at the left side of the page, but you can use align attribute to set it in
+                the center or right.</p>
+            <p><strong>Example:</strong> &lt;img src="/html/images/test.png" alt="Test Image" border = "3" align =
+                "right" /&gt;</p>
+            <br>
+            <h2 class="text-center">HTML - Lists</h2>
+            <p>HTML offers web authors three ways for specifying lists of information. All lists must contain one or
+                more list elements. Lists may contain −</p>
+            <ol>
+                <li><strong>&lt;ul&gt;</strong> − An unordered list. This will list items using plain bullets.</li>
+                <strong>Example:</strong>
+                <pre>
+                &lt;ul&gt;
+                    &lt;li&gt;Beetroot&lt;/li&gt;
+                    &lt;li&gt;Ginger&lt;/li&gt;
+                    &lt;li&gt;Potato&lt;/li&gt;
+                    &lt;li&gt;Radish&lt;/li&gt;
+                &lt;/ul&gt;</pre>
+                <h6>The type Attribute</h6>
+                <p>You can use type attribute for &lt;ul&gt; tag to specify the type of bullet you like. By default, it
+                    is a disc. Following are the possible options −</p>
+                <p>1. &lt;ul type="square"&gt;</p>
+                <p>2. &lt;ul type="disc"&gt;</p>
+                <p>3. &lt;ul type="circle"&gt;</p>
+                <li><strong>&lt;ol&gt;</strong> − An ordered list. This will use different schemes of numbers to list
+                    your items.</li>
+                <strong>Example:</strong>
+                <pre>
+                &lt;ol&gt;
+                    &lt;li&gt;Beetroot&lt;/li&gt;
+                    &lt;li&gt;Ginger&lt;/li&gt;
+                    &lt;li&gt;Potato&lt;/li&gt;
+                    &lt;li&gt;Radish&lt;/li&gt;
+                &lt;/ol&gt;
+                </pre>
+                <h6>The type Attribute</h6>
+                <p>You can use type attribute for &lt;ol&gt; tag to specify the type of numbering you like. By default,
+                    it is a number. Following are the possible options −</p>
+                <pre>
+                    &lt;ol type="1"&gt; - Default-Case Numerals.&lt;/ol&gt;
+                    &lt;ol type="I"&gt; - Upper-Case Numerals.&lt;/ol&gt;
+                    &lt;ol type="i"&gt; - Lower-Case Numerals.&lt;/ol&gt;
+                    &lt;ol type="A"&gt; - Upper-Case Letters.&lt;/ol&gt;
+                    &lt;ol type="a"&gt; - Lower-Case Letters.&lt;/ol&gt;</pre>
+
+                <li><strong>&lt;dl&gt;</strong> − A definition list. This arranges your items in the same way as they
+                    are arranged in a dictionary.</li>
+                <p>Definition List makes use of following three tags.</p>
+                <ul>
+                    <li>&lt;dl&gt; − Defines the start of the list</li>
+                    <li>&lt;dt&gt; − A term</li>
+                    <li>&lt;dd&gt; − Term definition</li>
+                    <li>&lt;dl&gt; − Defines the end of the list</li>
+                </ul>
+                <strong>Example:</strong>
+                <pre>
+                &lt;dl&gt;
+                    &lt;dt&gt;&lt;b&gt;HTML&lt;/b&gt;&lt;/dt&gt;
+                    &lt;dd&gt;This stands for Hyper Text Markup Language&lt;/dd&gt;
+                    &lt;dt&gt;&lt;b&gt;HTTP&lt;/b&gt;&lt;/dt&gt;
+                    &lt;dd&gt;This stands for Hyper Text Transfer Protocol&lt;/dd&gt;
+                &lt;/dl&gt;
+           
+                </pre>
+            </ol>
+
+            <div class="d-flex justify-content-center mt-3">
+                <a routerLink="/quiz-instructions" class="btn btn-lg btn-orange" type="button">Start Quiz</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

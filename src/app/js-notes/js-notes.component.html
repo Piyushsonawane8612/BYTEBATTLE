@@ -1,0 +1,468 @@
+<div class="container-fluid" style="padding-top: 100px;">
+    <div class="row mx-auto">
+        <div class="col">
+            <h1 class="text-center font">JAVASCRIPT</h1><br>
+            <h2>Introduction to JavaScript</h2>
+            <p>JavaScript is the world's most popular programming language.</p>
+            <p>JavaScript is the programming language of the Web.</p>
+            <p>JavaScript is easy to learn</p>
+            <h2>JavaScript Where To</h2>
+            <h4>The &lt;script&gt; Tag</h4>
+            <p>In HTML, JavaScript code is inserted between <strong>&lt;script&gt;</strong> and
+                <strong>&lt;/script&gt;</strong> tags.
+            </p>
+            <strong>Eg :- </strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;JavaScript in Body&lt;/h2&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo").innerHTML = "My First JavaScript";
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <h4>JavaScript Functions and Events</h4>
+            <p>A JavaScript <strong>function</strong> is a block of JavaScript code, that can be executed when "called"
+                for.</p>
+            <p>For example, a function can be called when an event occurs, like when the user clicks a button.</p>
+            <h4>JavaScript in &lt;head&lt; or &lt;body&lt;</h4>
+            <p>Scripts can be placed in the &lt;body&lt;, or in the &lt;head&lt; section of an HTML page, or in both.
+            </p>
+            <h4>JavaScript in &lt;head&lt;</h4>
+            <p>The function is invoked (called) when a button is clicked:</p>
+            <strong>Eg :- </strong>
+            <pre>
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
+function myFunction() &#123;
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+&#125;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Demo JavaScript in Head&lt;/h2&gt;
+
+&lt;p id="demo"&gt;A Paragraph.&lt;/p&gt;
+
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <h4>JavaScript in &lt;body&gt;</h4>
+            <strong>Eg :-</strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Demo JavaScript in Body&lt;/h2&gt;
+
+&lt;p id="demo"&gt;A Paragraph.&lt;/p&gt;
+
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() &#123;
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+&#125;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <h4>External JavaScript</h4>
+            <strong>External file: myScript.js</strong>
+            <pre>
+function myFunction() &#123;
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+&#125;</pre>
+            <p>To use an external script, include it using the &lt;script&gt; tag's src attribute.</p>
+            <strong>Eg :-</strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Demo External JavaScript&lt;/h2&gt;
+
+&lt;p id="demo"&gt;A Paragraph.&lt;/p&gt;
+
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;p&gt;This example links to "myScript.js".&lt;/p&gt;
+&lt;p&gt;(myFunction is stored in "myScript.js")&lt;/p&gt;
+
+&lt;script src="myScript.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <p>You can place an external script reference in &lt;head&gt; or &lt;body&gt; as you like.</p>
+            <br>
+            <h2>JavaScript Output</h2>
+            <h4>JavaScript Display Possibilities</h4>
+            <p>JavaScript can "display" data in different ways:</p>
+            <ul>
+                <li>Writing into an HTML element, using <code>innerHTML</code>.</li>
+                <li>Writing into the HTML output using <code>document.write().</code></li>
+                <li>Writing into an alert box, using <code>window.alert()</code>.</li>
+                <li>Writing into the browser console, using <code>console.log().</code></li>
+            </ul>
+            <h4>Using innerHTML</h4>
+            <p>To access an HTML element, JavaScript can use the <code>document.getElementById(id)</code> method.</p>
+            <p>The id attribute defines the HTML element. The <code>innerHTML</code> property defines the HTML content:
+            </p>
+            <strong>Eg :-</strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;My First Web Page&lt;/h2&gt;
+&lt;p&gt;My First Paragraph.&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo").innerHTML = 5 + 6;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <h4>Using document.write()</h4>
+            <p>For testing purposes, it is convenient to use <code>document.write()</code>:</p>
+            <strong>Eg :-</strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+document.write(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <p><mark>The document.write() method should only be used for testing.</mark></p>
+            <h4>Using window.alert()</h4>
+            <p>You can use an alert box to display data:</p>
+            <strong>Eg :-</strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;My First Web Page&lt;/h2&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+window.alert(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <p><mark>You can skip the window keyword.</mark></p>
+            <h4>JavaScript Print</h4>
+            <p>JavaScript does not have any print object or print methods.</p>
+            <p>You cannot access output devices from JavaScript.</p>
+            <p>The only exception is that you can call the <code>window.print()</code> method in the browser to print
+                the content of the current window.</p>
+            <strong>Eg :-</strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;The window.print() Method&lt;/h2&gt;
+
+&lt;p&gt;Click the button to print the current page.&lt;/p&gt;
+
+&lt;button onclick="window.print()"&gt;Print this page&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <h2>JavaScript Statements</h2>
+            <p>A JavaScript program consists of statements.</p>
+            <p>Statements are executed in the order they are written.</p>
+            <h4>JavaScript Programs</h4>
+            <p>A <strong>computer program</strong> is a list of "instructions" to be "executed" by a computer.</p>
+            <p>In a programming language, these programming instructions are called <strong>statements</strong>.</p>
+            <p>A <strong>JavaScript program</strong> is a list of programming <strong>statements</strong>.</p>
+            <h4>JavaScript Statements</h4>
+            <p>JavaScript statements are composed of:</p>
+            <p>Values, Operators, Expressions, Keywords, and Comments.</p>
+            <h4>JavaScript Code Blocks</h4>
+            <p>Statements can be grouped in code blocks using curly brackets &#123;&#125;</p>
+            <p>Code blocks are often used in functions to define statements executed together.</p>
+            <h4>Semicolons:</h4>
+            <p>Statements are separated by semicolons</p>
+            <p>Best practice is to add a semicolon at the end of each executable statement</p>
+            <h4>JavaScript White Space:</h4>
+            <p>Multiple spaces are ignored by JavaScript.</p>
+            <p>Recommended to add white space for readability.</p>
+            <h4>Line Length and Line Breaks:</h4>
+            <p>For readability, avoid code lines longer than 80 characters.</p>
+            <p>Break lines after operators or commas.</p>
+            <h4>JavaScript Keywords:</h4>
+            <p>JavaScript statements often start with a keyword to identify the JavaScript action to be performed.</p>
+            <table class="table table-bordered twidth">
+                <thead>
+                    <tr>
+                        <th>Keyword</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Var</td>
+                        <td>Declares a variable</td>
+                    </tr>
+                    <tr>
+                        <td>Let</td>
+                        <td>Declares a block variable</td>
+                    </tr>
+                    <tr>
+                        <td>Const</td>
+                        <td>Declares a block constant</td>
+                    </tr>
+                    <tr>
+                        <td>If</td>
+                        <td>Marks a block of statements to be executed on a condition</td>
+                    </tr>
+                    <tr>
+                        <td>Switch</td>
+                        <td>Marks a block of statements to be executed in different cases.</td>
+                    </tr>
+                    <tr>
+                        <td>for</td>
+                        <td>Marks a block of statements to be executed in a loop.</td>
+                    </tr>
+                    <tr>
+                        <td>function</td>
+                        <td>Declares a function</td>
+                    </tr>
+                    <tr>
+                        <td>return</td>
+                        <td>Exits a function</td>
+                    </tr>
+                    <tr>
+                        <td>try</td>
+                        <td>Implements error handling to a block of statements</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><mark>JavaScript keywords are reserved words. Reserved words cannot be used as names for
+                    variables.</mark></p>
+            <h2>JavaScript Syntax</h2>
+            <p>JavaScript syntax is the set of rules, how JavaScript programs are constructed:</p>
+            <pre>
+<span class="text-success">// How to create variables:</span>
+var x;
+let y;
+
+<span class="text-success">// How to use variables:</span>
+x = 5;
+y = 6;
+let z = x + y;</pre>
+            <h4>JavaScript Values</h4>
+            <p>The JavaScript syntax defines two types of values:</p>
+            <ul>
+                <li>Fixed values</li>
+                <li>Variable values</li>
+            </ul>
+            <p>Fixed values are called <strong>Literals</strong>.</p>
+            <p>Variable values are called <strong>ariables</strong>.</p>
+            <h4>JavaScript Literals</h4>
+            <p>The two most important syntax rules for fixed values are:</p>
+            <p><strong>1. Numbers</strong> are written with or without decimals:</p>
+            <strong>Eg:- </strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;JavaScript Numbers&lt;/h2&gt;
+
+&lt;p&gt;Number can be written with or without decimals.&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo").innerHTML = 10.50;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <p><strong>2. Strings</strong> are text, written within double or single quotes:</p>
+            <strong>Eg:- </strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;JavaScript Strings&lt;/h2&gt;
+
+&lt;p&gt;Strings can be written with double or single quotes.&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo").innerHTML = 'John Doe';
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <h4>JavaScript Variables</h4>
+            <p>In a programming language, <strong>variables</strong> are used to store data values.</p>
+            <p>JavaScript uses the keywords <code>var, let</code> and <code>const</code> to declare variables.</p>
+            <p>An <strong>equal sign </strong>is used to <strong>assign values</strong> to variables.</p>
+            <strong>Eg:- </strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;JavaScript Variables&lt;/h2&gt;
+
+&lt;p&gt;In this example, x is defined as a variable.
+Then, x is assigned the value of 6:&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+let x;
+x = 6;
+document.getElementById("demo").innerHTML = x;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <h4>JavaScript Operators</h4>
+            <p>JavaScript uses <strong>arithmetic operators</strong> ( <code>+ - * /</code> ) to
+                <strong>compute</strong> values:
+            </p>
+            <h4>JavaScript Expressions</h4>
+            <p>An expression is a combination of values, variables, and operators, which computes to a value.</p>
+            <p>The computation is called an evaluation.</p>
+            <p>For example, 5 * 10 evaluates to 50:</p>
+            <h4>JavaScript Keywords</h4>
+            <p>JavaScript keywords are used to identify actions to be performed.</p>
+            <p>The <code>let</code> keyword tells the browser to create variables:</p>
+            <p>The <code>var</code> keyword tells the browser to create variables:</p>
+            <h2>JavaScript Comments</h2>
+            <p>Not all JavaScript statements are "executed".</p>
+            <p>Code after double slashes <code>// </code> or between <code>/* </code>and <code>*/</code> is treated as a
+                comment.</p>
+            <p>Comments are ignored, and will not be executed:</p>
+            <br>
+            <h2>JavaScript Identifiers / Names</h2>
+            <p>Identifiers are JavaScript names.Identifiers are used to name variables and keywords, and functions.
+            </p>
+            <p>A JavaScript name must begin with:</p>
+            <ul>
+                <li>A letter (A-Z or a-z)</li>
+                <li>A dollar sign ($)</li>
+                <li>Or an underscore (_)</li>
+            </ul>
+            <p><strong>Notes:- </strong>Numbers are not allowed as the first character in names.This way JavaScript can
+                easily distinguish identifiers from numbers.</p>
+            <h4>JavaScript is Case Sensitive</h4>
+            <p>The variables lastName and lastname, are two different variables:</p>
+            <br>
+            <h2>JavaScript Variables</h2>
+            <p>4 Ways to Declare a JavaScript Variable:</p>
+            <ul>
+                <li>Using <code>var</code></li>
+                <li>Using <code>let</code></li>
+                <li>Using <code>const</code></li>
+                <li>Using nothing</li>
+            </ul>
+            <h4>When to Use JavaScript var?</h4>
+            <p>Always declare JavaScript variables with <code>var,let</code>, or <code>const</code>.</p>
+            <p>The <code>var</code> keyword is used in all JavaScript code from 1995 to 2015.</p>
+            <p>The <code>let</code> and <code>const</code> keywords were added to JavaScript in 2015</p>
+            <p>If you want your code to run in older browsers, you must use <code>var</code>.</p>
+            <h4>When to Use JavaScript const?</h4>
+            <p>If you want a general rule: always declare variables with <code>const</code>.</p>
+            <p>If you think the value of the variable can change, use <code>let</code>.</p>
+            <strong>Eg:- </strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;JavaScript Variables&lt;/h1&gt;
+
+&lt;p&gt;In this example, price1, price2, and total are variables.&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+document.getElementById("demo").innerHTML =
+"The total is: " + total;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; </pre>
+            <p>The two variables <code>price1</code> and <code>price2</code> are declared with the <code>const</code> keyword.</p>
+            <p>These are constant values and cannot be changed.</p>
+            <p>The variable <code>total</code> is declared with the <code>let</code> keyword.</p>
+            <p>This is a value that can be changed.</p>
+            <h4>The Assignment Operator</h4>
+            <p>In JavaScript, the equal sign (<code>=</code>) is an "assignment" operator, not an "equal to" operator.</p>
+            <h4>JavaScript Data Types</h4>
+            <p>JavaScript variables can hold numbers like 100 and text values like "John Doe".</p>
+            <p>In programming, text values are called text strings.</p>
+            <p>Strings are written inside double or single quotes. Numbers are written without quotes.</p>
+            <strong>Eg:- </strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;JavaScript Variables&lt;/h1&gt;
+
+&lt;p&gt;Strings are written with quotes.&lt;/p&gt;
+&lt;p&gt;Numbers are written without quotes.&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+const pi = 3.14;
+let person = "John Doe";
+let answer = 'Yes I am!';
+
+document.getElementById("demo").innerHTML =
+pi + "&lt;br&gt;" + person + "&lt;br&gt;" + answer;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <h4>JavaScript Dollar Sign $</h4>
+            <p>Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:</p>
+            <strong>Eg:- </strong>
+            <pre>
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;JavaScript Variables&lt;/h1&gt;
+
+&lt;p&gt;The dollar sign is treated as a letter in JavaScript names.&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+let $$$ = 2;
+let $myMoney = 5;
+document.getElementById("demo").innerHTML = $$$ + $myMoney;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+            <div class="d-flex justify-content-center mt-3">
+                <a routerLink="/quiz-instructions" class="btn btn-lg btn-orange" type="button">Start Quiz</a>
+            </div>
+        </div>
+    </div>
+</div>

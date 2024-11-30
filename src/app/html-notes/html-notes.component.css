@@ -1,0 +1,20 @@
+* {
+    font-family: 'Arial', sans-serif;
+}
+.font{
+    font-size:54px;
+}
+.btn-orange {
+    background-color: #ff6600;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.btn-orange:hover {
+    background-color: #000000;
+    color: white;
+}

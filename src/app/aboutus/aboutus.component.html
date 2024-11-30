@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-us</title>
+    
+    <style>
+      body {
+          font-family: sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          overflow: hidden;
+      }
+
+      .heading {
+          text-align: center;
+          padding: 20px 0;
+      }
+
+      .wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .content {
+          flex: 1;
+          padding: 20px;
+          box-sizing: border-box;
+      }
+
+      .content h2 {
+          font-size: 28px;
+          color: #333;
+      }
+
+      .content p {
+          font-size: 16px;
+          color: #666;
+          line-height: 1.9;
+      }
+
+      .btn {
+          display: inline-block;
+          padding: 10px 20px;
+          margin-top: 20px;
+          text-decoration: none;
+         
+          border-radius: 5px;
+      }
+
+      .image img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+      
+  section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+  }
+
+  h2 {
+    color: #333;
+  }
+  h4{
+      font-size: 20px;
+      color: #666;
+      line-height: 1.6;
+      text-align: center;
+      }
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .member {
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .member:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .member:hover img {
+    transform: scale(1.2);
+  }
+  .member p {
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    
+  }
+      
+
+      @media (min-width: 768px) {
+          .content {
+              flex: 0 0 60%; 
+          }
+
+          .image {
+              flex: 0 0 35%; 
+              margin-top: 20px;
+          }
+      }
+  </style>
+</head>
+<body>
+    <div class="main " style="padding-top: 50px;">
+    <div class="container">
+        <div class="heading">
+            <h1>About us</h1>
+        </div>
+        <div class="wrapper">
+            <div class="content">
+                <h2>Welcome to Quiz Mania, where knowledge meets fun!</h2>
+                <p>At Quiz Mania, we believe in the power of quizzes to make learning enjoyable and interactive. Our goal is to provide a diverse range of quizzes that cater to various interests and knowledge levels,
+                    ensuring there's something for everyone.
+                    Our commitment is to create a dynamic and user-friendly quiz experience. Whether you're a trivia novice or a seasoned quizzer, 
+                    Quiz Mania is the place for you. Join us on this exciting journey of learning, laughter, and friendly competition!</p>
+                <a href="" class="btn">Join us Today</a>
+            </div>
+            <div class="image">
+                <img src="assets/Student.jpg" alt="Quiz Mania Image">
+            </div>
+        </div>
+        <div class="section">
+            <div class="heading1">
+            <h1>Our Team</h1>
+        </div>
+        <h4>Our team is passionate about creating a platform that not only challenges your mind but also brings joy to your learning experience <br>
+            Meet our dedicated team of quiz enthusiasts who work tirelessly to bring you engaging content:</h4>
+    
+          <div class="team-members">
+            <!-- Insert team member details with images here -->
+            <div class="member">
+              <img src="assets/team-member-1.jpg" alt="John Doe">
+              <h3>Ajay Mali</h3>
+              <p>Coder</p>
+            </div>
+    
+            <div class="member">
+              <img src="assets/team-member-2.jpg" alt="Jane Smith">
+              <h3>Ajay Thengale</h3>
+              <p>UI & Design Guru</p>
+            </div>
+    
+            <div class="member">
+              <img src="assets/team-member-3.jpg" alt="Bob Johnson">
+              <h3>Piyush Sonawane</h3>
+              <p>UI & Design Guru</p>
+            </div>
+    
+            <div class="member">
+              <img src="assets/team-member-1.jpg" alt="Alice Davis">
+              <h3>Jayesh Suryawanshi</h3>
+              <p>Coder</p>
+            </div>
+        </div>
+        </div>
+
+      <div class="contain">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 mx-auto">
+            <h3 class="text-center">MISSION</h3>
+                <h5 class="text-center">Enabling Learning and Fun Through Interactive Quizzes</h5>
+                <p>At QuizMania, our mission is to provide a dynamic and engaging platform that facilitates learning and 
+                  fun through interactive quizzes. We are committed to offering a user-friendly environment for both creators and participants, promoting educational growth.</p>
+          </div>
+          <div class="col-lg-4 col-sm-12 mx-auto">
+            <h3 class="text-center">VISION</h3>
+                <h5 class="text-center">Empowering Learning Through Engaging Quizzes</h5>
+                <p>Our vision for the QuizMania Angular App is to create a dynamic and user-friendly platform that fosters learning through interactive quizzes. We envision a space where individuals, educators, and 
+                  organizations can effortlessly create, share, and participate in quizzes that challenge, educate, and inspire.</p>
+          </div>
+        </div>
+    </div>
+        </div>
+      </div>
+    
+      
+         
+          
+       
+    
+    
+
+
+
+

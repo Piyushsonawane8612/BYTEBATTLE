@@ -1,0 +1,36 @@
+/* .nav-css */
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    background: #fff;
+}
+.nav-css {
+  box-shadow: 0 2px 6px rgb(211 211 211);
+  background: #fff !important;
+  height: 70px;
+}
+.navbar {
+  background-color: white;
+}
+.nav-link {
+  color: #262626 !important;
+}
+.nav-item a:hover {
+  color: #ff9800 !important;
+}
+.nav-item a {
+  font-size: 17px !important;
+  text-transform: capitalize !important;
+}
+.account i {
+  color: #ff9800;
+}
+.active {
+  color: #ff9800 !important;
+}
+
+
+@media (max-width: 576px) { 
+    .account{margin-bottom: 20px !important;}
+  }
+  

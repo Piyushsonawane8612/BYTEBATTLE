@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+
+  .box-container {
+    background: #fff;
+    width: 80%; /* Adjusted for responsiveness */
+    max-width: 400px; /* Added max-width for larger screens */
+    padding: 40px;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+    border-top: 4px solid #ff9800;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.box-container input {
+    width: 120px; 
+    border-radius: 5px;
+    border-color: #000;
+}
+
+.box-container input:focus{box-shadow: none !important;}
+
+
+.custom-button{
+  background: transparent;
+  border-color: #000;
+  padding: 7px 25px;
+  color: #0a0a0a;
+}
+.box-container p{
+  font-style: italic;
+  font-weight: 500;
+  font-size: 21px;
+}
+.custom-button:hover{
+  border-color: #000;
+  background: #000;
+  color: white;
+}
+
+  #question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .piyush {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    
+  }
+  
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .score-card {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #scorePercentage {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: conic-gradient(#fe5101 var(--rotation-angle, 0deg), #f7f6f6 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    
+  }
+  
+  #scorePercentage::after {
+    position: absolute;
+    content: attr(data-score) '%';
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    color: #030303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #scorePercentage {
+      width: 200px;
+      height: 200px;
+    }
+  
+    #scorePercentage::after {
+      width: 160px;
+      height: 160px;
+      font-size: 40px;
+    }
+    .box-container {
+      width: 90%; /* Adjusted for smaller screens */
+  }
+  }
+  
+  @media screen and (max-width: 576px) {
+    #scorePercentage {
+      width: 150px;
+      height: 150px;
+    }
+  
+    #scorePercentage::after {
+      width: 120px;
+      height: 120px;
+      font-size: 30px;
+    }
+    .box-container {
+      width: 100%; /* Adjusted for even smaller screens */
+  }
+  }
+  

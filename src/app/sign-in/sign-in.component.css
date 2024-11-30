@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 120px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+.main-box{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+.left-side{
+    background: #ff6600 !important;
+    border-radius: 5px 131px 131px 5px !important;
+}
+.custom {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+    width: 110px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #ff6600;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.custom-button {
+    width: 150px;
+    margin-top: 10px;
+    text-align: center !important;
+    align-items: center !important;
+    background-color: #ff7b00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #000000;
+}
+
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #eee;
+}
+
+.sign-up {
+    transition: all 0.5s ease;
+}
+
+.container:hover .sign-up {
+    left: 50%;
+    opacity: 1;
+    z-index: 1;
+}
+
+@media (max-width: 575.98px) {
+    .left-side{
+        background: #ff6600 !important;
+        border-radius: 0px !important;
+    }
+}
+

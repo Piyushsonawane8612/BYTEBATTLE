@@ -1,0 +1,328 @@
+<div class="container-fluid " style="padding-top: 100px;">
+    
+        <div class="row mx-auto">
+            <div class="col">
+                <h1 class="text-center font">Bootstrap</h1><br>
+                <h4>Bootstrap</h4>
+                <p>Bootstrap 5 is the newest version of <strong>Bootstrap</strong>, which is the most popular HTML, CSS,
+                    and JavaScript
+                    framework for creating responsive, mobile-first websites.</p>
+                <p>Bootstrap 5 is completely free to download and use!</p>
+                <ul>What is Bootstrap?
+                    <li>Bootstrap is a free front-end framework for faster and easier web development</li>
+                    <li>Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables,
+                        navigation, modals, image carousels and many other, as well as optional JavaScript plugins</li>
+                    <li>Bootstrap also gives you the ability to easily create responsive designs</li>
+                </ul>
+                <br>
+                <h4>What is Responsive Web Design?</h4>
+                <p>Responsive web design is about creating web sites which automatically adjust themselves to look good
+                    on all devices, from small phones to large desktops.</p>
+                <p>Bootstrap 5 (released 2021) is the newest version of <strong>Bootstrap</strong> (released 2013); with
+                    new components, faster stylesheet and more responsiveness.</p>
+                <p>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However,
+                    Internet Explorer 11 and down is not supported.</p>
+                <p>The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to
+                    vanilla JavaScript instead of jQuery.</p>
+                <ul>
+                    <p><strong>Advantages of Bootstrap:</strong></p>
+                    <li><strong>Easy to use:</strong> Anybody with just basic knowledge of HTML and CSS can start using
+                        Bootstrap</li>
+                    <li><strong>Responsive features:</strong> Bootstrap's responsive CSS adjusts to phones, tablets, and
+                        desktops</li>
+                    <li><strong>Mobile-first approach: </strong>In Bootstrap, mobile-first styles are part of the core
+                        framework</li>
+                </ul>
+                <br>
+                <p><strong>Where to Get Bootstrap 5?</strong></p>
+                <p>There are two ways to start using Bootstrap 5 on your own web site.</p>
+                <p>You can:</p>
+                <ul>
+                    <li>Include Bootstrap 5 from a CDN</li>
+                    <li>Download Bootstrap 5 from getbootstrap.com</li>
+                </ul>
+                <br>
+                <p><strong>Bootstrap 5 CDN</strong></p>
+                <p>If you don't want to download and host Bootstrap 5 yourself, you can include it from a CDN (Content
+                    Delivery Network).</p>
+                <p>jsDelivr provides CDN support for Bootstrap's CSS and JavaScript:</p>
+                <p class="text-success">&lt;!-- Latest compiled and minified CSS -- &gt;</p>
+                <p class="text-primary prevent-line-break">&lt;link
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+                </p>
+                <p class="text-success ">&lt;!-- Latest compiled JavaScript --&gt;</p>
+                <p class="prevent-line-break"><span style="color: rgb(84, 32, 32);">&lt;script</span><span
+                        class="text-danger"> src </span><span
+                        class="text-primary">="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"&gt;</span><span
+                        style="color: rgb(84, 32, 32);">&lt;/script&gt;</span></p>
+                <br>
+                <p><strong>Downloading Bootstrap 5</strong></p>
+                <br>
+                <p>If you want to download and host Bootstrap 5 yourself, go to <span
+                        class="text-primary text-decoration-underline">https://getbootstrap.com/</span>, and follow the
+                    instructions there.</p>
+                <p>Create Your First Web Page With Bootstrap 5</p>
+                <h6>1. Add the HTML5 doctype</h6>
+                <p>Bootstrap 5 uses HTML elements and CSS properties that require the HTML5 doctype.</p>
+                <p>Always include the HTML5 doctype at the beginning of the page, along with the lang attribute and the
+                    correct title and character set</p>
+                <br>
+                <h6>2. Bootstrap 5 is mobile-first</h6>
+                <p>Bootstrap 5 is designed to be responsive to mobile devices.</p>
+                <p>Add the following meta tag inside the head element to ensure proper rendering and touch zooming</p>
+                <p class="text-primary">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+                <br>
+                <h6>3. Containers</h6>
+                <p>Bootstrap 5 also requires a containing element to wrap site contents.</p>
+                <p>There are two container classes to choose from:</p>
+                <ol>
+                    <li>The <span class="text-danger">.container</span> class provides a responsive <strong>fixed width
+                            container</strong></li>
+                    <li>The <span class="text-danger">.container-fluid</span> class provides a <strong>full width
+                            container</strong>, spanning the entire width of the viewport</li>
+                </ol>
+                <br>
+                <p>Fixed Container</p>
+                <p>Use the <span class="text-danger">.container</span> class to create a responsive, fixed-width
+                    container.</p>
+                <p>Note that its width (<span class="text-danger">max-width</span>) will change on different screen
+                    sizes:</p>
+                <table class="table table-bordered twidth">
+                    <thead>
+                        <tr>
+                            <th>Screen Size</th>
+                            <th>Max Width</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Extra Small (<576px)</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>Small (≥576px)</td>
+                            <td>540px</td>
+                        </tr>
+                        <tr>
+                            <td>Medium (≥768px)</td>
+                            <td>720px</td>
+                        </tr>
+                        <tr>
+                            <td>Large (≥992px)</td>
+                            <td>960px</td>
+                        </tr>
+                        <tr>
+                            <td>Extra Large (≥1200px)</td>
+                            <td>1140px</td>
+                        </tr>
+                        <tr>
+                            <td>XXL (≥1400px)</td>
+                            <td>1320px</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p></p>
+                <br>
+                <h3>Bootstrap 5 Text/Typography</h3>
+                <h5>Bootstrap 5 Default Settings</h5>
+                <p>Bootstrap 5 uses a default <span class="text-danger">font-size</span> of <strong>1rem (16px by
+                        default)</strong>, and its <span class="text-danger">line-height</span> is <strong>1.5</strong>.
+                </p>
+                <p>In addition, all <span class="text-danger">&lt;p&gt;</span> elements have <span
+                        class="text-danger">margin-top: 0</span> and <span class="text-danger">margin-bottom:</span>
+                    <strong>1rem (16px by default)</strong>.
+                </p>
+                <p>Headings <strong>&lt;h1&gt; to &lt;h6&gt;</strong> have bolder font-weight and responsive font-size.
+                </p>
+                <h5>Display Headings:</h5>
+                <p>Display headings are used to stand out more than normal headings (larger font-size and lighter
+                    font-weight), and there are six classes to choose from: <span class="text-danger">.display-1</span>
+                    to <span class="text-danger">.display-6</span></p>
+                <h5>Small (Secondary) Text:</h5>
+                <p>In Bootstrap 5 the HTML <span class="text-danger">&lt;small&gt;</span> element (and the <span
+                        class="text-danger">.small</span> class) is used to create a smaller, secondary text in any
+                    heading</p>
+                <h5>Highlight Text:</h5>
+                <p>Use <span class="text-danger">&lt;mark&gt;</span> or <span class="text-danger">.mark</span> class for
+                    highlighted text,Styled with a yellow background color and some padding</p>
+                <h5>Abbreviations:</h5>
+                <p>Use <span class="text-danger">&lt;abbr&gt;</span> element for abbreviations or acronyms,Styled with a
+                    dotted border
+                    bottom and a cursor with a question mark on hover.</p>
+                <h5>Description Lists:</h5>
+                <p>Use <span class="text-danger">&lt;dl&gt;</span> for description lists.
+                    Styled with term and description pairs.</p>
+                <h5>Code snippets:</h5>
+                <p>Inline code snippets should be in the <span class="text-danger">&lt;code&gt;</span> element,Styled
+                    with a monospaced font.</p>
+                <h5>Keyboard Inputs:</h5>
+                <p>Use <span class="text-danger">&lt;kbd&gt;</span>for indicating input typically entered via the
+                    keyboard.
+                    Styled with a border and background.</p>
+                <h5>Multiple Code Lines:</h5>
+                <p>Use <span class="text-danger">&lt;pre&gt;</span> for multiple lines of code,Preserves spaces and line
+                    breaks with a fixed-width font</p>
+                <h5>Additional Typography Classes:</h5>
+                <p>text-start: Left-aligned text.</p>
+                <p>text-end: Right-aligned text.</p>
+                <p>text-center: Center-aligned text.</p>
+                <p>text-nowrap: Prevents text from wrapping.</p>
+                <p>text-lowercase: Displays text in lowercase.</p>
+                <p>text-uppercase: Displays text in uppercase.</p>
+                <p>text-capitalize: Displays text with the first letter of each word capitalized.</p>
+                <br><br>
+                <h2>Bootstrap Tables</h2>
+                <h4>1. Bootstrap Basic Table</h4>
+                <p>A basic Bootstrap table has a light padding and only horizontal dividers.</p>
+                <p>The <span class="text-danger">.table</span> class adds basic styling to a table</p>
+                <p><Strong>Eg=</Strong></p>
+                <pre>
+&lt;table class="table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;#&lt;/th&gt;
+      &lt;th scope="col"&gt;First&lt;/th&gt;
+      &lt;th scope="col"&gt;Last&lt;/th&gt;
+      &lt;th scope="col"&gt;Handle&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="row"&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+                <h4>2. Striped Rows</h4>
+                <p>Adds zebra-stripes to the table using the <span class="text-danger">.table-striped</span> class.</p>
+                <h4>3. Bordered Table:</h4>
+                <p>Adds borders on all sides of the table and cells with the <span
+                        class="text-danger">.table-bordered</span> class.</p>
+                <h4>4. Hover Rows:</h4>
+                <p>Enables a hover effect with a grey background color using the <span
+                        class="text-danger">.table-hover</span> class.</p>
+                <h4>5. Contextual Classes:</h4>
+                <p>Contextual classes can be used to color table rows (&lt;tr&gt;) or table cells (&lt;td&gt;)</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-active">
+                            <th>.active</th>
+                            <th>Applies the hover color to the table row or table cell</th>
+                        </tr>
+                        <tr class="table-success">
+                            <td>.success</td>
+                            <td>Indicates a successful or positive action</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td>.info</td>
+                            <td>Indicates a neutral informative change or action</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>.warning</td>
+                            <td>Indicates a warning that might need attention</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>.danger</td>
+                            <td>Indicates a dangerous or potentially negative action</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td>.Primary</td>
+                            <td>Indicates a fundamental or essential element.</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td>.Secondary</td>
+                            <td>Suggests a supportive or supplementary role.</td>
+                        </tr>
+                        <tr class="table-light">
+                            <td>.Light</td>
+                            <td>Represents a subtle or gentle variation.</td>
+                        </tr>
+                        <tr class="table-dark">
+                            <td>.Dark</td>
+                            <td>Signifies a bold or intense presence.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>6. Responsive Tables</h4>
+                <p>The <span class="text-danger">.table-responsive</span> class adds a scrollbar to the table when
+                    needed (when it is too big horizontally)</p>
+                <br><br>
+                <h2>Bootstrap 5 Images</h2>
+                <h4>1. Rounded Corners</h4>
+                <p>Use the <span class="text-danger">.rounded</span> class to add rounded corners to an image.</p>
+                <h4>2. Circle</h4>
+                <p>Apply the <span class="text-danger">.rounded-circle</span> class to shape the image into a circle</p>
+                <h4>3. Thumbnail</h4>
+                <p>Utilize the<span class="text-danger">.img-thumbnail</span> class to create a bordered thumbnail of
+                    the image.</p>
+                <h4>4. Aligning Images</h4>
+                <p>Float images left or right with the classes <span class="text-danger">.float-start</span> and <span
+                        class="text-danger">.float-end</span>.</p>
+                <h4>5. Centered Image</h4>
+                <p>Center an image by adding the utility classes <span class="text-danger">.mx-auto</span> (margin:auto)
+                    and <span class="text-danger">.d-block</span> (display:block) to the image:</p>
+                <h4>6. Responsive Images</h4>
+                <p>Create responsive images by adding an <span class="text-danger">.img-fluid</span> class to the
+                    &lt;img&gt; tag. The image will then scale nicely to the parent element.</p>
+                <p>The <span class="text-danger">.img-fluid</span> class applies <span class="text-danger">max-width:
+                        100%;</span> and <span class="text-danger">height: auto;</span> to the image:</p>
+                <br><br>
+                <h2>Bootstrap 5 Colors</h2>
+                <h4>1. Text Colors</h4>
+                <p>Bootstrap 5 has some contextual classes that can be used to provide "meaning through colors".</p>
+                The classes for text colors are: <span class="text-danger"> .text-muted, .text-primary, .text-success,
+                    .text-info, .text-warning,
+                    .text-danger, .text-secondary, .text-white, .text-dark, .text-body </span>,(default body color/often
+                black) and
+                <span class="text-danger">.text-light</span>
+                <p class="text-muted">This text is muted.</p>
+                <p class="text-primary">This text is important.</p>
+                <p class="text-success">This text indicates success.</p>
+                <p class="text-info">This text represents some information.</p>
+                <p class="text-warning">This text represents a warning.</p>
+                <p class="text-danger">This text represents danger.</p>
+                <p class="text-secondary">Secondary text.</p>
+                <p class="text-dark">This text is dark grey.</p>
+                <p class="text-body">Default body color (often black).</p>
+                <p class="text-light bg-dark">This text is light grey (on white background).</p>
+                <p class="text-white bg-dark">This text is white (on white background).</p>
+                <h4>1.1. Opacity Text Colors:</h4>
+                <p>You can also add 50% opacity for black or white text with the <span
+                        class="text-danger">.text-black-50</span> or <span class="text-danger">.text-white-50</span>
+                    classes:</p>
+                <h4>2. Background Colors</h4>
+                <p>The classes for background colors are: <span class="text-danger"> .bg-primary, .bg-success, .bg-info,
+                        .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light. </span></p>
+                <br><br>
+                <h2>Bootstrap 5 Alerts</h2>
+                <h4>1. Alerts</h4>
+                <p>Bootstrap 5 provides an easy way to create predefined alert messages:</p>
+                <p>Alerts are created with the .alert class, followed by one of the contextual classes <span
+                        class="text-danger">.alert-success,
+                        .alert-info, .alert-warning, .alert-danger, .alert-primary, .alert-secondary, .alert-light or
+                        .alert-dark</span></p>
+                <h4>2. Alert Links</h4>
+                <p>Add the .alert-link class to any links inside the alert box to create "matching colored links"</p>
+                <h4>3. Closing Alerts</h4>
+                <p>To close the alert, add the <span class="text-danger">.alert-dismissible</span> class to the
+                    container.</p>
+                <p>Use a button with classes btn-close and data-bs-dismiss="alert" to enable closing functionality.</p>
+                <h4>4. Animated Alerts</h4>
+                <p>Add the <span class="text-danger">.fade</span> and <span class="text-danger">.show</span> classes for
+                    a fading effect when closing the alert message</p>
+                <p>Utilize these classes in conjunction with the alert classes for animated alerts.</p>
+
+                <div class="d-flex justify-content-center mt-3">
+                    <a routerLink="/quiz-instructions" class="btn btn-lg btn-orange" type="button">Start Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
